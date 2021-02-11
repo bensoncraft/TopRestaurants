@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Top Five";
+}
+
+@model IEnumerable<string>
+
+    <ul>
+        @foreach (string i in Model)
+        {
+            <li>@i</li>
+        }
+    </ul>
+

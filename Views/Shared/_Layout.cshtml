@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Top 5 Restaurants</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Shared page tabs-->
+    <a asp-action="Index">Top 5 Restaurants</a>  / 
+    <a asp-action="SubmitSuggestion">Submit Suggestion</a> / 
+    <a asp-action="RestaurantList">Restaurant List</a>
+
+    <header>
+        <h1>@ViewBag.Title</h1>
+    </header>
+
+    @RenderBody()
+</body>
+</html>
